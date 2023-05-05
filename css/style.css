@@ -1,0 +1,140 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.up {
+    vertical-align: top;
+}
+
+main,
+main * {
+    /*border: thin solid #eee*/
+}
+
+img {
+    width: 50px;
+}
+
+.navbar {
+    border-radius: 0;
+}
+
+.viewport {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+/* comment section */
+
+.balloon {
+    background: #eee;
+    padding: 20px 30px;
+    display: inline-block;
+    border-radius: 50px;
+    min-width: 300px;
+    /* max-width: calc(100% - 35px); */
+    color: #777;
+}
+
+.balloon p {
+    margin: 0;
+    padding: 0;
+}
+
+.comment {
+    /* border: thin solid grey; */
+    margin-bottom: 30px;
+    float: right !important;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.comment:last-child {
+    margin-bottom: 0;
+}
+
+.comment img {
+    vertical-align: top;
+    margin-top: 5px;
+    margin-right: 5px;
+    width: 35px;
+}
+
+.comment .details {
+    color: #777;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 5px;
+}
+
+.comment .details span {
+    padding-right: 10px;
+}
+
+.comment .details .time::before {
+    margin-right: 3px;
+    position: relative;
+    bottom: -1.4px;
+}
+
+.comment {}
+
+.comment.fierce {
+    /* float: left !important; */
+    flex-direction: row;
+}
+
+.comment.fierce .balloon {
+    color: rgb(239, 240, 249);
+    background-color: rgb(41, 41, 46);
+}
+
+.comment.fierce img {
+    margin-left: 5px;
+}
+
+
+/* post comment */
+
+.comments {
+    margin-bottom: 50px;
+}
+
+.comments,
+.post-comment {
+    /* border: thin solid #ddd; */
+}
+
+.post-comment {
+    display: flex;
+}
+
+.post-comment .form-group {
+    flex: 1 !important;
+    margin: 0;
+    margin-right: 5px;
+}
+
+.post-comment textarea[name="chat_text"] {
+    width: 100%;
+    resize: vertical;
+    min-height: 46px;
+    border: 1px solid #eee !important;
+    box-shadow: none;
+}
+
+.post-comment .submit {
+    color: #777;
+    background-color: #eee;
+    border: none;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.post-comment textarea[name="chat_text"]:focus {
+    box-shadow: none;
+}
+
+.post-comment .submit:focus {
+    outline: 0;
+}
