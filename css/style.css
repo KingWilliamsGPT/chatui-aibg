@@ -22,6 +22,9 @@ img {
 .viewport {
     max-width: 600px;
     margin: 0 auto;
+    background-color: #ffffff42;
+    padding: 0.4px 3em;
+    border-radius: 1rem ;
 }
 
 
@@ -51,7 +54,7 @@ img {
 }
 
 .comment:last-child {
-    margin-bottom: 0;
+    margin-bottom: 10rem;
 }
 
 .comment img {
@@ -107,6 +110,8 @@ img {
 
 .post-comment {
     display: flex;
+    position: fixed;
+    bottom: 0px;
 }
 
 .post-comment .form-group {
@@ -137,4 +142,20 @@ img {
 
 .post-comment .submit:focus {
     outline: 0;
+}
+
+
+/* background */
+
+
+.background{
+    background-image: url("../images/bg_dark.jpg");
+    background-attachment: fixed;
+}
+
+
+/* page header */
+
+.page-header{
+    color:rgb(239, 240, 249);
 }

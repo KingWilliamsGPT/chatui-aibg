@@ -36,11 +36,19 @@ function User(name, profile_pic, is_super, page_info) {
 
 document.addEventListener('DOMContentLoaded', function() {
     commentInfo = {
-        $form: document.forms.post_comment,
+        $form: document.querySelector('.post-comment'),
     	$comment_area: document.querySelector('.comments')
     }
     commentInfo.$submit_button = commentInfo.$form.querySelector('.submit');
-    commentInfo.$text_input = commentInfo.$form.querySelector('textarea[name="chat_text"]');
+    commentInfo.$text_input = commentInfo.$form.querySelector('.post-input');
+
+	// commentInfo.$text_input.addEventListener('key', function(){alert('worked')});
+	commentInfo.$text_input.onkeypress = function(ev){
+		if(ev.key == 'Enter'){
+			commentInfo.$submit_button.click();
+		}
+	}
+
 
     user1 = new User('Helen Anderson', 'profile.webp', true, commentInfo)
     user2 = new User('Milecia', 'Milecia.webp', false, commentInfo)
